@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Hewlett-Packard</title>
+        <link rel="stylesheet" type="text/css" href="static/stylesheets/styles.css">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <script type="text/javascript" src="/static/javascripts/jquery-3.6.0.min.js"></script>
+
+    </head>
+
+<body>
+
+    <header class="header">
+        <div id="headerInner">
+            <nav class="topMenuLeft">
+                <ul class="ul1">
+                    <li class="li1"><a href="index">ABOUT US</a></li>
+                    <li class="li1"><a href="#">PRIVACY</a></li>
+                    <li class="li1"><a href="ourteam">OUR TEAM</a></li>
+					<li class="li1"><a href="contact">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <form name="search" action="#" method="get">
+                <b class="b1">CLIENT LOGIN</b>
+                <input class="hed" type="text" name="q" placeholder="USERNAME">
+                <input class="hed" type="text" name="q" placeholder="PASSWORD">
+                <button class="butOk" type="submit" onclick="alert('Действие не добавлено')">GO</button>
+            </form>
+        </div>
+    </header>
+    <main class="main">
+        <form method="POST" action="/register" class="form" name="Sel1">
+            <div class="reg">Регистрация</div>
+            <div class="form__item">
+                <input name="loginField" class="reg__input" type="text">
+                <span class="bar"></span>
+                <label>Login</label>
+            </div>
+             <div class="form__item">
+                <input name="passField" class="reg__input" type="password">
+                <span class="bar"></span>
+                <label>Password</label>
+            </div>
+            <div class="form__item">
+                <input name="emailField" class="reg__input" type="email">
+                <span class="bar"></span>
+                <label>Email</label>
+            </div>
+            <button type="submit" id="sendbtn">Зарегистрировать</button>
+        </form>
+
+    </main>
+
+</body>
+</html>

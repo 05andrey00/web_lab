@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    background: #00000000;
+    font-family: "Segoe UI", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:0.94em;
+    line-height:135%;
+}
+h2{
+font-size: 36px;
+}
+aside, nav, footer, header, section { display: block; }
+
+.ul1{
+    list-style: none;
+}
+
+a{
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* -------------------------------
+Главные блоки
+----------------------------------*/
+
+#wrapper {
+
+    margin-top:40px;
+    width: 1260px;
+    margin: 0 auto;
+
+/*    height: auto !important;*/
+
+
+ }
+
+.header{
+    width:100%;
+    background: #484848;
+    height:40px;
+    z-index: 4;
+ }
+
+#headerInner {
+    position:relative;
+    border:0px solid #333;
+    width:1200px;
+    height:40px;
+    margin:0 auto;
+    margin-top:0px;
+ }
+
+/*
+#content {
+ margin-top:40px;
+}
+
+#content #colLeft {
+ background: #fff;
+ float:left;
+ width:800px;
+ margin-right:0px;
+ }
+
+#content #colRight {
+ margin-left:45px;
+ float:left;
+ width:350px;
+ position:relative;
+}
+
+#middle:after {
+ content: '.';
+ display: block;
+ clear: both;
+ visibility: hidden;
+ height: 0;
+}
+*/
+
+/* Верхнее правое меню */
+
+.topMenuLeft {
+    height:40px;
+    position:absolute;
+    left:0px;
+    top:0px;
+    border: 0px solid #1FA2E1;
+ }
+
+.topMenuLeft .ul1 .li1 {
+    float:left;
+    height: 40px;
+ }
+
+/*
+.topMenuRight .ul1 {
+    padding-left:0px;
+ }
+*/
+
+.topMenuLeft .ul1 .li1 a{
+    margin-top:0px;
+    font-weight:100;
+    border-right:0px solid #adadad;
+    display: block;
+    color:#919191;
+    text-decoration:none;
+    line-height:20px;
+    font-size:18px;
+    padding:8px 10px 11px 10px;
+    font-size:0.8em;
+ }
+
+.b1 {
+    position: static;
+    margin-top:0px;
+    font-weight:100;
+    border-right:0px solid #adadad;
+    color:#919191;
+    text-decoration:none;
+    line-height:36px;
+    font-size:18px;
+    font-size:0.8em;
+    padding:20px 10px 11px 10px;
+}
+
+.topMenuLeft .ul1 .li1 a:hover{
+    background: #fff;
+    color:#555;
+ }
+
+ form[name="search"] {
+    float: right;
+}
+
+.hed {
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 10px;
+    background-color: #373737;
+    margin-top: 10px;
+    display: inline;
+}
+
+.butOk {
+    height: 20px;
+    width: 31px;
+    background: #ec4444;
+    border-radius: 3px;
+    border: none;
+    color: aliceblue;
+}
+
+.logo_company {
+    height: 70px;
+    width: 70px;
+
+}
+
+.top-menu {
+    margin: 0 0;
+    background: #e3e3e3;
+    border-radius: 3px;
+
+}
+
+.top-menu li {
+    display: inline-block;
+    border-right: 1px solid #515369;
+    border-color: #d3d3d3;
+}
+
+.top-menu li a{
+    font-size:12px;
+    line-height: 43px;
+    color: currentColor;
+    padding: 0 20px;
+    margin: 0;
+}
+
+.search{
+    height: 21px;
+    width: 160px;
+    float: right;
+    margin-right: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: #484848;
+    margin-top: 10px;
+    display: inline;
+    font-size: 10px;
+}
+
+.lorem {
+    margin-left: 15px;
+    margin-top: 70px;
+}
+
+.lorem h1{
+    font-size: 65px;
+    color: #ec4444;
+}
+
+.lorem ul{
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+.products {
+    margin-left: 15px;
+    margin-top: 140px;
+    margin-bottom: 25px;
+}
+
+.products h2{
+
+}
+.products table {
+    width: 100%;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.products tr td{
+    padding-bottom: 12px;
+    text-align: left;
+    width: 15px;
+}
+
+.first_tr {
+    color: #44a7ec;
+    padding-bottom: 20px;
+}
+
+.second_tr{
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.blog{
+    display: inline-block;
+    margin-top: 50px;
+    padding: 20px;
+    width: 550px;
+}
+
+.blog h2{
+    margin-bottom: 20px;
+}
+.blog second_tr{
+    font-weight: 100px;
+}
+.text_1{
+    font-size: 10px;
+    line-height: 14px;
+}
+.main {
+
+    padding-top: 20px;
+    padding-bottom: 80px;
+    background-image: url('../images/back.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.form{
+
+    padding:50px;
+
+/*    text-align:right;*/
+
+
+    width:500px;
+/*    height:500px;*/
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 50px;
+
+
+}
+
+.form__item {
+
+    margin: 0 auto;
+   position: relative;
+    margin-bottom: 30px;
+}
+
+.reg__input {
+
+
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+.reg__input:focus {
+  outline: none;
+}
+label {
+  color: #999;
+  font-size: 18px;
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 15px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+.reg__input:focus ~ label, input:valid ~ label {
+  top: -15px;
+  font-size: 14px;
+  color: #5264AE;
+}
+
+
+/* BOTTOM BARS ================================= */
+.bar {
+  position: relative;
+  display: block;
+  width: 320px;
+}
+.bar:before, .bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background: #5264AE;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.bar:before {
+  left: 50%;
+}
+.bar:after {
+  right: 50%;
+}
+
+/* active state */
+.reg__input:focus ~ .bar:before,
+.reg__input:focus ~ .bar:after {
+  width: 50%;
+}
+
+.send__but{
+    text-align: center;
+    margin:23px auto;
+    width: 240px;
+    height: 30px;
+    border: none;
+/*
+    -webkit-transition-duration: 0.4s;  Safari*/
+    transition-duration: 0.4s;
+
+}
+.send__but:hover{
+ background-color: #5264AE;
+    color: white;
+}
+.reg{
+    margin-bottom: 20px;
+    color: #5264AE;
+    text-align: center;
+    font-size: 40px;
+}
+.command__bloc{
+    text-align: center;
+
+/*
+    margin-left: 80px;
+    margin-right: 80px;
+*/
+    margin-top: 150px;
+
+
+}
+.command__span{
+
+
+}
+.command{
+    display: inline-block;
+    margin: 10px 50px;
+/*    margin-right: 60px;*/
+
+}
+
+.round{
+
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+
+}
+.command__info{
+text-align: center;
+}
+footer{
+    height: 30px;
+/*    display: flex;*/
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    background-color: #484848;
+}
+
+.span_text{
+    margin-left: 60px;
+}
+
+.logos{
+    margin-right: 20px;
+    float: right;
+
+}
+.logo{
+    height: 30px;
+    width: 30px;
+
+}
+

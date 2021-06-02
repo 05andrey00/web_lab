@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Hewlett-Packard</title>
+        <link rel="stylesheet" type="text/css" href="static/stylesheets/styles.css">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <script type="text/javascript" src="/static/javascripts/jquery-3.6.0.min.js"></script>
+        <script>
+            $(function() {
+                $('#TasksAreaTexturing').mouseover(function() {
+                    $('#TasksPaper6').css({
+                        filter: 'brightness(1.2)',
+                        webkitFilter: 'brightness(1.2)'
+                        });
+                    });
+                });
+        </script>
+
+
+
+    </head>
+
+<body>
+
+    <header class="header">
+        <div id="headerInner">
+            <nav class="topMenuLeft">
+                <ul class="ul1">
+                    <li class="li1 li1_activ"><a href="index">ABOUT US</a></li>
+                    <li class="li1"><a href="#">PRIVACY</a></li>
+                    <li class="li1"><a href="ourteam">OUR TEAM</a></li>
+
+					<li class="li1"><a href="contact">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <form name="search" action="#" method="get">
+                <b class="b1">CLIENT LOGIN</b>
+                <input class="hed" type="text" name="q" placeholder="  Username">
+                <input class="hed" type="text" name="q" placeholder="  Password">
+                <button class="butOk" type="submit" onclick="alert('Действие не добавлено')">GO</button>
+            </form>
+        </div>
+    </header>
+
+    <main class="main">
+        <div id="wrapper">
+            <img class="logo_company" src="static/images/logo2.ico" alt="HP">
+            <nav>
+                <ul class="top-menu">
+                    <li><a  href="#">COMPANY</a></li>
+                    <li><a  href="#">PRODUCTS</a></li>
+                    <li><a  href="#">SERVICES</a></li>
+                    <li><a  href="#">SUPPORT</a></li>
+                    <li><a  href="#">PARTNERS</a></li>
+                    <li><a  href="#">BLOG</a></li>
+                    <input class="search" type="text" name="q" placeholder="  Search our site...">
+                </ul>
+            </nav>
+
+            <div class="lorem">
+                <h1>Lorem Ipsum</h1>
+                <ul>
+                    <li>Sea esse deserunt ei, no diam ubique euripidis has. Ius dicat feugiat no.</li>
+                    <li>Postulant assueverit ea his. An eos iusto solet.</li>
+                    <li>Ceteros assentior omittantur cum ad.</li>
+                    <li>An eos iusto solet, id mel dico habemus. </li>
+
+                </ul>
+            </div>
+
+            <div class="products">
+                <h2>Products</h2>
+                <table>
+                    <tr class="first_tr">
+                        <td>iPhone & iPad<br>Apps</td>
+                        <td>Blackberry<br>Apps</td>
+                        <td>Windows Phone<br>Apps</td>
+                        <td>Windows<br>PC Apps</td>
+                    </tr>
+                    <tr class="second_tr">
+                        <td>Sea esse deserunt ei,<br>no diam ubique<br>euripidis has.</td>
+                        <td>Sea esse deserunt ei,<br>no diam ubique<br>euripidis has.</td>
+                        <td>Sea esse deserunt ei,<br>no diam ubique<br>euripidis has.</td>
+                        <td>Sea esse deserunt ei,<br>no diam ubique<br>euripidis has.</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="blog">
+                <h2>From our blog</h2>
+                <h3 class="first_tr">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit</h3>
+                <img width="550px" height="200px" borderRadius = "1%" src="static/images/1.jfif" alt="kotic">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+
+            </div>
+
+            <div class="blog2">
+                <h2>From our blog</h2>
+                <h3 class="first_tr">Lorem ipsum dolor sit amet, consectetur<br>adipisscing elit</h3>
+                <img width="550px" height="200px" src="static/images/Cat2.jfif" alt="kotic">
+                <p >Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+
+            </div>
+
+        </div>
+    </main>
+<footer>
+    <span class="span_text">Copyright 2012 SomeCorp. All Rights Reservered. | Disclaimer & Privacy Policy
+    </span>
+    <div class="logos">
+        <img class="logo" alt="inst" src="static/images/log_inst.png">
+        <img class="logo" alt="inst" src="static/images/log_twit.png">
+        <img class="logo" alt="inst" src="static/images/log_vk.png">
+    </div>
+
+
+</footer>
+    <script>
+        $(document).ready(function(){
+            $(".blog p").hide();
+            });
+        console.log("111");
+        $(".blog h3").click(function () {
+            console.log("222");
+//          $(".blog p").show();
+            $(".blog p").toggle();
+            });
+
+        $(document).ready(function(){
+            $(".blog2 p").hide();
+            });
+
+        console.log("111");
+        $(".blog2 h3").click(function () {
+            console.log("222");
+            $(".blog2 p").toggle();
+            });
+
+        $(".blog img").hover(
+            function() {
+                $(this).animate({
+                    width: "555px",
+                    height: "205px",
+                    }, "slow");
+                },
+            function() {
+                $(this).animate({
+                    width: "550px",
+                    height: "200px",
+                    }, "slow");
+                });
+
+        $(".blog2 img").hover(
+            function() {
+                $(this).animate({
+                    width: "555px",
+                    height: "205px",
+//                    border: "8px solid green",
+                    }, "slow");
+                },
+            function() {
+                $(this).animate({
+                    width: "550px",
+                    height: "200px",
+                    }, "slow");
+                });
+    </script>
+
+</body>
+</html>

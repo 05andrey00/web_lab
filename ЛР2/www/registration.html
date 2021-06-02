@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Hewlett-Packard</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        <script>
+            function Complete() {
+                let name = document.getElementsByClassName("reg__input")[0].value
+                 let secondName = document.getElementsByClassName("reg__input")[1].value
+                alert("Пожалуйста подтвердите запрос" + "\nName: " + name + "\nSecondName: " + secondName)
+            }
+        </script>
+        <script> $(document).ready(function() {
+    function sortTable(flag) {
+        var table, rows, switching, i, x, y, shouldSwitch;
+        table = document.getElementById("myTable");
+        switching = true;
+        /*Make a loop that will continue until
+        no switching has been done:*/
+        while (switching) {
+            //start by saying: no switching is done:
+            switching = false;
+            rows = table.rows;
+            /*Loop through all table rows (except the
+             first, which contains table headers):*/
+
+            for (i = 1; i < (rows.length - 1); i++) {
+                //start by saying there should be no switching:
+                shouldSwitch = false;
+                /*Get the two elements you want to compare,
+                one from current row and one from the next:*/
+                x = rows[i].getElementsByTagName("TD")[0];
+                y = rows[i + 1].getElementsByTagName("TD")[0];
+
+                //check if the two rows should switch place:
+                if(flag) {
+                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                        //if so, mark as a switch and break the loop:
+                        shouldSwitch = true;
+                        break;
+                    }
+                  }
+                  else {
+                    if (x.innerHTML.toLowerCase() <= y.innerHTML.toLowerCase()) {
+                        //if so, mark as a switch and break the loop:
+                          shouldSwitch = true;
+                          break;
+                    }
+                  }
+            }
+
+            if (shouldSwitch) {
+                /*If a switch has been marked, make the switch
+                and mark that a switch has been done:*/
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+              }
+        }
+    }
+
+    $(".article__subtitle").click(function(event) {
+        if ($(this).parent().find(".article__text").hasClass('active')) {
+             $(this).css("background-color","grey");
+           }
+    $(this).parent().find(".article__text").toggleClass("active");
+    $(this).parent().find(".article__link").toggleClass("active");
+    })
+    $('.myTable__btn-f').click(function(event) {
+        sortTable(true);
+    });
+    $('.myTable__btn-b').click(function(event){
+        sortTable(false);
+    });
+  });</script>
+
+    </head>
+
+<body>
+
+    <header class="header">
+        <div id="headerInner">
+            <nav class="topMenuLeft">
+                <ul class="ul1">
+                    <li class="li1"><a href="index.html">ABOUT US</a></li>
+                    <li class="li1"><a href="#">PRIVACY</a></li>
+                    <li class="li1"><a href="ourteam.html">OUR TEAM</a></li>
+                    <li class="li1 li1_activ"><a href="#">REGISTRATION</a></li>
+                </ul>
+            </nav>
+
+            <form name="search" action="#" method="get">
+                <b class="b1">CLIENT LOGIN</b>
+                <input class="hed" type="text" name="q" placeholder="USERNAME">
+                <input class="hed" type="text" name="q" placeholder="PASSWORD">
+                <button class="butOk" type="submit" onclick="alert('Действие не добавлено')">GO</button>
+            </form>
+        </div>
+    </header>
+    <main class="main">
+        <form class="form" name="Sel1">
+            <div class="reg">Registration</div>
+            <div class="form__item">
+                <input class="reg__input" Name="name" type="form__item-text" required>
+                <span class="bar"></span>
+                <label>Name</label>
+            </div>
+            <div class="form__item">
+                <input class="reg__input" Name="secondName" type="form__item-text" required>
+                <span class="bar"></span>
+                <label>SecondName</label>
+            </div>
+            <div class="form__item">
+                <input class="reg__input" type="form__item-text" required>
+                <span class="bar"></span>
+                <label>Login</label>
+            </div>
+             <div class="form__item">
+                <input class="reg__input" type="form__item-text" required>
+                <span class="bar"></span>
+                <label>Password</label>
+            </div>
+            <div class="form__item">
+                <input class="reg__input" type="form__item-text" required>
+                <span class="bar"></span>
+                <label>Email</label>
+            </div>
+            <button class="send__but" type="submit" onclick="Complete()" >Send</button>
+
+        </form>
+        <div class="main__element">
+                    <table id="myTable" border="1">
+                        <tbody><tr><th>Фрукты/Овощи</th> <th>Белки</th><th>Жиры</th><th>Углеводы</th><th>Калорийность</th></tr>
+                        <tr><td>Абрикосы</td> <td>0,9</td><td>-</td><td>10,5</td><td>46,0</td></tr>
+                        <tr><td>Апельсины</td> <td>0,9</td><td>-</td><td>8,4</td><td>38,0</td></tr>
+                        <tr><td>Виноград</td> <td>0,4</td><td>-</td><td>17,5</td><td>69,0</td></tr>
+                        <tr><td>Вишня</td> <td>0,8</td><td>-</td><td>11,3</td><td>49,0</td></tr>
+                        <tr><td>Груша</td> <td>0,4</td><td>-</td><td>10,7</td><td>42,0</td></tr>
+                    </tbody></table>
+                    <button type="button" class="myTable__btn-f">Прямая сортировка!</button>
+                    <button type="button" class="myTable__btn-b">Обратная сортировка!</button>
+                           </div>
+    </main>
+</body>
+</html>

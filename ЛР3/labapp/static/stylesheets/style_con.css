@@ -1,0 +1,39 @@
+.header__list li:nth-child(6) a{
+   color:#2980b9;
+}
+.form{
+	text-align:center;
+}
+.popup{
+	border:dashed 2px blue;
+	display:none;
+	left:20px;
+	position:absolute;
+	background-color:green;
+	color:blue;
+    max-width:350px;
+	max-height:200px;
+	box-sizing:border-box;
+}
+#popup-txt{
+	padding:5px 0 5px 0;
+	text-align:center;
+	max-width:300px;
+}
+.popup active{
+	display:block;
+}
+.main__form{
+max-width:320px;
+margin:0 auto;
+}
+.main__form-item{
+    padding:10px 0px;
+}
+.main__title{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.popup.active{
+	display: block;
+}

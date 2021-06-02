@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Hewlett-Packard</title>
+        <link rel="stylesheet" type="text/css" href="static/stylesheets/styles.css">
+		<link rel="stylesheet" type="text/css" href="static/stylesheets/style_con.css">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <script type="text/javascript" src="/static/javascripts/jquery-3.6.0.min.js"></script>
+    </head>
+
+<body>
+
+    <header class="header">
+        <div id="headerInner">
+            <nav class="topMenuLeft">
+                <ul class="ul1">
+                    <li class="li1"><a href="index">ABOUT US</a></li>
+                    <li class="li1"><a href="#">PRIVACY</a></li>
+                    <li class="li1"><a href="ourteam">OUR TEAM</a></li>
+                    <li class="li1"><a href="registration">REGISTRATION</a></li>
+					<li class="li1 li1_activ"><a href="contact">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <form name="search" action="#" method="get">
+                <b class="b1">CLIENT LOGIN</b>
+                <input class="hed" type="text" name="q" placeholder="USERNAME">
+                <input class="hed" type="text" name="q" placeholder="PASSWORD">
+                <button class="butOk" type="submit" onclick="alert('Действие не добавлено')">GO</button>
+            </form>
+        </div>
+    </header>
+    <main class="main">
+        <div class="popup">
+        <p id="popup-txt">
+        </div>
+        <form class="main__form">
+            <p class="main__form-item">Имя:
+                <input name="fname" value="" type="text" size="40">
+               </p>
+               <p class="main__form-item">Фамилия:
+                <input name="lname" type="text" size="40">
+               </p>
+               <p class="main__form-item">E-mail:
+                <input name="email" type="email" size="40">
+                </p><p class="main__form-item">Тип запроса:
+               <input list="id" name="reqtype">
+                <datalist id="id">
+                <option value="Отрицательный отзыв (в корзину)">
+                </option><option value="Положительный отзыв(на главную страницу с отзывами)">
+               </option></datalist>
+            </p>
+               <p class="main__form-item">Сообщение:<br>
+                <textarea name="reqtext" cols="40" rows="3"></textarea></p>
+               <p class="main__form-item">
+                   <input  id="sendbtn" type="submit" value="Отправить">
+                <input type="reset" value="Очистить"></p>
+        </form>
+        <p align="center">YOUR REQUEST STATUS <h id="statusfield"></h></p>
+    </main>
+
+<script type="text/javascript" src="static/javascripts/formsend.js"></script>
+</body>
+</html>
